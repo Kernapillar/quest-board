@@ -1,24 +1,8 @@
-# README
+# QuestBoard
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project is a fullstack development refresher
 
-Things you may want to cover:
+The goal is to allow a user to login, view their quest board (list of quests) and click into each one for a description, required tasks, and reward for completion. The users should also be able to create personal quests for themselves  public quests to be available for everyone, and private quests that can be sent to specific users. 
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Potential Ideas for extra funcitonality: 
+- Incorporate chatGPT: Allow users the option of letting ChatGPT write the quest description for them. 
