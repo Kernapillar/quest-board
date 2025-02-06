@@ -6,3 +6,5 @@ The goal is to allow a user to login, view their quest board (list of quests) an
 
 Potential Ideas for extra funcitonality: 
 - Incorporate chatGPT: Allow users the option of letting ChatGPT write the quest description for them. 
+- allow for daily, weekly quests that become available at the start of each week/month 
+- rotation of quests or random ones weekly/daily?
