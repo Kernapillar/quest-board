@@ -3,7 +3,7 @@ class CreateQuests < ActiveRecord::Migration[8.0]
     create_table :quests do |t|
       t.string :title
       t.text :description
-      t.boolean :completed, default: false
+      t.boolean :completed
       t.string :author
 
       t.timestamps
