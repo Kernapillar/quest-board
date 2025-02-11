@@ -1,5 +1,5 @@
 class Board < ApplicationRecord
+    belongs_to :user
     has_many :quests
-    belongs_to :owner
 
 end
