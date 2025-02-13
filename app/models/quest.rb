@@ -6,8 +6,13 @@ class Quest < ApplicationRecord
 
     validates :title, presence: true
     validates :description, presence: true
+    validates :visibility, inclusion: { in: ["personal", "public", "targeted"] }
 
     def completed?
         tasks.all?(&:completed)
+    end
+
+    def visibility?
+        visibility
     end
 end
