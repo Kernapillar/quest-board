@@ -4,7 +4,8 @@ class Quest < ApplicationRecord
 
     has_many :tasks, dependent: :destroy
 
-
+    validates :title, presence: true
+    validates :description, presence: true
 
     def completed?
         tasks.all?(&:completed)
