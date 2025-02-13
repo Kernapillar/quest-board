@@ -7,6 +7,7 @@ class Quest < ApplicationRecord
     validates :title, presence: true
     validates :description, presence: true
     validates :visibility, inclusion: { in: ["personal", "public", "targeted"] }
+    validates :repeat, inclusion: { in: ["never", "daily", "weekly", "monthly"] }
 
     def completed?
         tasks.all?(&:completed)
@@ -14,5 +15,9 @@ class Quest < ApplicationRecord
 
     def visibility?
         visibility
+    end
+
+    def repeat?
+        repeat
     end
 end

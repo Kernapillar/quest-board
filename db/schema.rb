@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_02_13_231037) do
+ActiveRecord::Schema[8.0].define(version: 2025_02_13_231838) do
   create_table "boards", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -28,6 +28,7 @@ ActiveRecord::Schema[8.0].define(version: 2025_02_13_231037) do
     t.integer "author_id", null: false
     t.string "visibility", default: "personal", null: false
     t.integer "target_user_id"
+    t.string "repeat", default: "never", null: false
     t.index ["author_id"], name: "index_quests_on_author_id"
     t.index ["board_id"], name: "index_quests_on_board_id"
     t.index ["target_user_id"], name: "index_quests_on_target_user_id"
